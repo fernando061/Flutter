@@ -1,3 +1,4 @@
+export 'package:fl_components/screens/avatar_screen.dart';
 export 'package:fl_components/screens/home_screens.dart';
 export 'package:fl_components/screens/alert_screens.dart';
 export 'package:fl_components/screens/card_screens.dart';
