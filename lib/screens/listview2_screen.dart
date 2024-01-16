@@ -9,7 +9,7 @@ class Listview2Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: const Center(child:  Text('Listview Tipo 2',style: TextStyle(color: Colors.white))),
+        title: const Center(child:  Text('Listview Tipo 2',style: TextStyle(color: Colors.black))),
         elevation: 0,
         backgroundColor: Colors.indigo,
       ),
@@ -19,7 +19,6 @@ class Listview2Screen extends StatelessWidget {
           title:Text(options[index]),
           trailing: const Icon(Icons.arrow_forward_ios_outlined,color: Colors.indigo,),
           onTap: () {
-            
           },
         ),
         separatorBuilder: (_, __) => const Divider(),
