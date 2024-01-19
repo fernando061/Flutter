@@ -22,6 +22,33 @@ class AppTheme{
           backgroundColor: primary,
           elevation: 5
         ),
+        
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.indigo,
+            shape: const StadiumBorder(),
+            elevation: 0
+          )
+        ),
+
+        inputDecorationTheme: const InputDecorationTheme(
+          floatingLabelStyle: TextStyle(
+            color: primary
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide( color: primary),
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10), topRight: Radius.circular(10))
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide( color: primary),
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10), topRight: Radius.circular(10))
+          ),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10),topRight: Radius.circular(10))
+          )
+        )
+
+
         // textTheme: const TextTheme(
         //   bodyLarge: TextStyle(color: Colors.white), // Establece el color del texto en blanco
         //   bodyMedium: TextStyle(color: Colors.white),
@@ -54,6 +81,8 @@ class AppTheme{
           elevation: 0
         ),
 
-        scaffoldBackgroundColor: Colors.black
+        scaffoldBackgroundColor: Colors.black,
+
+
       );
 }
